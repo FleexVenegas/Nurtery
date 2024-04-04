@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useRef, useState } from "react";
+import React, { ChangeEvent, useRef } from "react";
 
 // Styles
 import "./TextArea.scss";
@@ -20,12 +20,12 @@ const TextArea: React.FC<TextAreaProps> = ({
     value,
     onChange,
 }: TextAreaProps) => {
-    const [textAreaValue, setTextAreaValue] = useState<string>("");
+    // const [textAreaValue, setTextAreaValue] = useState<string>("");
     const textareaRef = useRef<HTMLTextAreaElement>(null);
 
     const handleChange = (e: ChangeEvent<HTMLTextAreaElement>) => {
-        const value = e.target.value;
-        setTextAreaValue(value);
+        // const value = e.target.value;
+        // setTextAreaValue(value);
         if (onChange) {
             onChange(e); // Llamada a la función onChange externa
         }
