@@ -1,0 +1,70 @@
+.Accordion {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+
+    @media (max-width: 768px) {
+        padding: 5px;
+    }
+
+    .accordion-item {
+        width: 100%;
+        border-radius: 12px;
+        padding: 0 15px;
+        transition: all 0.5s;
+
+        @media (max-width: 768px) {
+            padding: 0 5px;
+        }
+
+        &:hover {
+            background: #ebebebe5;
+        }
+
+        // &:nth-child(odd) {
+        //     // border-radius: 12px;
+        //     background: rgba(110, 97, 97, 0.5); // Fondo para preguntas impares
+        // }
+
+        // &:nth-child(even) {
+        //     background: rgb(212, 212, 212); // Fondo para preguntas pares
+        // }
+
+        &.active_item {
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+
+            &:hover {
+                background: unset;
+            }
+
+            // transform: scale(1.05);
+        }
+
+        .accordion-title {
+            width: 100%;
+            height: 50px;
+            user-select: none;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+
+            &.active {
+                font-weight: 500;
+                color: #0a3474;
+            }
+
+        }
+
+        .accordion-content {
+            // border-top: 1px solid;
+            // padding-top: 10px;
+            font-size: 1rem;
+            padding: 0 15px 15px;
+            color: #000000b3;
+        }
+    }
+}

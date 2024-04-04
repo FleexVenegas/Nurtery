@@ -1,0 +1,153 @@
+.About {
+    width: 100%;
+    height: 100%;
+    padding: 90px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    @media (max-width: 768px) {
+        gap: 20px;
+        overflow: hidden;
+    }
+
+    @media (min-width: 768px) and (max-width: 914px) {
+        overflow: hidden;
+    }
+
+    .a_cnt_info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .a_cnt_about {
+            grid-area: 1 / 1 / 2 / 2;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            position: relative;
+
+            @media (max-width: 768px) {
+                gap: 20px;
+            }
+
+            .a_info {
+                // color: var(--c50);
+                color: var(--black);
+                font-size: 1.2rem;
+                line-height: 22px;
+
+                @media (max-width: 768px) {
+                    text-align: center;
+                }
+            }
+        }
+
+        .container_shape{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+
+            .cnt_shape{
+                width: 150px;
+                height: 150px;
+                background: red;
+                aspect-ratio: 1;
+                --g: /20.56% 20.56% radial-gradient(#000 calc(71% - 1px), #0000 71%) no-repeat;
+                mask: 100% 50% var(--g), 93.301% 75% var(--g), 75% 93.301% var(--g), 50% 100% var(--g), 25% 93.301% var(--g), 6.699% 75% var(--g), 0% 50% var(--g), 6.699% 25% var(--g), 25% 6.699% var(--g), 50% 0% var(--g), 75% 6.699% var(--g), 93.301% 25% var(--g), radial-gradient(100% 100%, #000 38.366%, #0000 calc(38.366% + 1px));
+
+                &.shape_1{
+                    background: #e7ffe4;
+                }
+                &.shape_2{
+                    background: #c9ffc4;
+                }
+                &.shape_3{
+                    background: #98ff90;
+                }
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .a_collash {
+            grid-area: 1 / 2 / 2 / 3;
+            display: flex;
+            justify-content: center;
+
+            .a_posit {
+                width: 100%;
+                height: 100%;
+                position: relative;
+
+                .a_cnt_imge {
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 50%;
+                    aspect-ratio: 1;
+                    --g: /20.56% 20.56% radial-gradient(#000 calc(71% - 1px), #0000 71%) no-repeat;
+                    mask: 100% 50% var(--g), 93.301% 75% var(--g), 75% 93.301% var(--g), 50% 100% var(--g), 25% 93.301% var(--g), 6.699% 75% var(--g), 0% 50% var(--g), 6.699% 25% var(--g), 25% 6.699% var(--g), 50% 0% var(--g), 75% 6.699% var(--g), 93.301% 25% var(--g), radial-gradient(100% 100%, #000 38.366%, #0000 calc(38.366% + 1px));
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+
+                        @media (max-width: 768px) {
+                            display: none;
+                        }
+
+                    }
+
+                    &.img1 {
+                        position: absolute;
+                        z-index: 1;
+                        top: -7%;
+                        left: 25%;
+                        // background: #e7ffe495;
+                        background: var(--c100);
+                    }
+
+                    &.img2 {
+                        position: absolute;
+                        z-index: 2;
+                        background: var(--c200);
+                        // background: #c9ffc495;
+
+                        left: 50%;
+                        top: 25%;
+                    }
+
+                    &.img3 {
+                        position: absolute;
+                        z-index: 3;
+                        background: var(--c300);
+                        // background: #98ff9095;
+                        bottom: 0%;
+                        left: 13%;
+
+                        @media (min-width: 769px) and (max-width: 1342px) {
+                            bottom: -22px;
+                        }
+                    }
+                }
+            }
+
+
+
+        }
+    }
+}

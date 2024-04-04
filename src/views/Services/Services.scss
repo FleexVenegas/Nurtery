@@ -1,0 +1,16 @@
+.Services {
+    width: 100%;
+    min-height: 100vh;
+    // background: var(--bg);
+    padding: 90px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .s_cnt_services {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 60px;
+    }
+}

@@ -1,0 +1,30 @@
+.TextArea_ {
+    width: 100%;
+    position: relative;
+
+
+    .area_text {
+        color: var(--gray);
+        font-size: var(--size-text);
+        padding-left: 8px;
+    }
+
+    .text_area {
+        margin-top: 5px;
+        border: none;
+        outline: none;
+        font-family: "Metropolis";
+        background: var(--white);
+        min-height: 80px;
+        max-height: 170px;
+        width: 100%;
+        font-size: 1rem;
+        padding: 1px 10px;
+        color: #000;
+        resize: none;
+        border-radius: 12px;
+        padding-top: 10px;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+
+    }
+}

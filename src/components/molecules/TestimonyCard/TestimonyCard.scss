@@ -1,0 +1,42 @@
+.TestimonyCard {
+    width: 30%;
+    border-radius: 12px;
+    background: var(--c50);
+    box-shadow: 1px 1px 5px var(--c950);
+    padding: 20px;
+    position: relative;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+
+    .cnt_testy {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+
+        .t_testi {
+            font-size: 1.2rem;
+            // text-align: justify;
+            color: var(--black);
+        }
+
+        .t_name {
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+    }
+
+    .shape {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background: var(--c200);
+        width: 50px;
+        aspect-ratio: 1;
+        --g: /37.02% 37.02% radial-gradient(#000 calc(71% - 1px), #0000 71%) no-repeat;
+        mask: radial-gradient(100% 100%, #000 calc(25.476% - 1px), #0000 25.476%) intersect, radial-gradient(#000 0 0) exclude, 100% 50% var(--g), 65.451% 97.553% var(--g), 9.549% 79.389% var(--g), 9.549% 20.611% var(--g), 65.451% 2.447% var(--g);
+    }
+
+}

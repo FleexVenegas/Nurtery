@@ -1,0 +1,86 @@
+:root {
+    --size-text: 1rem;
+    --white: #ffffff;
+    --black: #000000;
+    --c50: #e7ffe4;
+    --c100: #c9ffc4;
+    --c200: #98ff90;
+    --c300: #56ff50;
+    --c400: #00ff00;
+    --c500: #00e606;
+    --c600: #00b809;
+    --c700: #008b07;
+    --c800: #076d0d;
+    --c900: #0b5c11;
+    --c950: #003406;
+    --time: all 0.5s;
+    --bg: #1d1f29;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #7f7f7f;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 3px;
+    height: 8px;
+}
+
+@media screen and (max-width: 1000px) {
+    *::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+body.noScrollBar::-webkit-scrollbar {
+    display: none;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #7f7f7f;
+    border-radius: 10px;
+    border: 0 solid #ffffff;
+}
+
+/* @font-face {
+  font-family: "Metropolis";
+  src: local("Metropolis"),
+      url(./assets/fonts/metropolis/Metropolis-Regular.otf);
+} */
+
+body {
+    font-family: "Metropolis", sans-serif;
+    /* background: var(--c50); */
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Esta es una clase para manejar el estilo de las componentes Input si estan vacios */
+.emptyField {
+    border-bottom: 2px solid red;
+}

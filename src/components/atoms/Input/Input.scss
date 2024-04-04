@@ -1,0 +1,42 @@
+.cnt_Input {
+    width: 100%;
+
+    .text_span {
+        color: var(--gray);
+        font-size: var(--size-text);
+        padding-left: 8px;
+    }
+
+    .cnt_inpu_img {
+        position: relative;
+
+        .input-ut {
+            margin-top: 5px;
+            width: 100%;
+            height: 40px;
+            font-size: 1rem;
+            outline: none;
+            padding: 0 8px;
+            font-size: var(--size-text);
+            color: var(--c950);
+            border-radius: 8px;
+            border: none;
+            background: var(--white);
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+
+            &.type_pas {
+                padding-right: 40px;
+
+            }
+        }
+
+        .view_password {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            cursor: pointer;
+            transform: translate(0, -50%);
+            opacity: 0.5;
+        }
+    }
+}

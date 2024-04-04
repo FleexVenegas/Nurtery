@@ -1,0 +1,42 @@
+.ViewCard {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card_ {
+        width: 70vw;
+        height: 90vh;
+        background: var(--white);
+        border-radius: 15px;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        position: relative;
+        padding: 50px;
+
+        @media (max-width: 768px) {
+            width: 95vw;
+            padding: 20px;
+        }
+
+
+        .btn_close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            outline: none;
+            border: none;
+            background: transparent;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+    }
+}

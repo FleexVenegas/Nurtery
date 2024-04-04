@@ -1,0 +1,24 @@
+.Testimonials {
+    width: 100%;
+    background: var(--c100);
+    padding: 90px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    --mask:
+        radial-gradient(67.08px at 50% 90px, #000 99%, #0000 101%) calc(50% - 60px) 0/120px 51% repeat-x,
+        radial-gradient(67.08px at 50% -60px, #0000 99%, #000 101%) 50% 30px/120px calc(51% - 30px) repeat-x,
+        radial-gradient(67.08px at 50% calc(100% - 90px), #000 99%, #0000 101%) calc(50% - 60px) 100%/120px 51% repeat-x,
+        radial-gradient(67.08px at 50% calc(100% + 60px), #0000 99%, #000 101%) 50% calc(100% - 30px)/120px calc(51% - 30px) repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+
+
+    .t_cnt_testi {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+    }
+}
