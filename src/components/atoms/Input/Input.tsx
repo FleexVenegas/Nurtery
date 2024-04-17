@@ -26,7 +26,6 @@ const Input: React.FC<InputProps> = ({
     text,
     onChange,
 }) => {
-
     return (
         <div className={`cnt_Input ${className}`}>
             {text && <span className="text_span">{text}</span>}
